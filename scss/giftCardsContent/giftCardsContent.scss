@@ -1,0 +1,54 @@
+.giftCardsContent {
+    max-width: 900px;
+    height: 1300px;
+    margin: 0 auto;
+
+    .giftHeader {
+        margin-top: 60px;
+        font-size: 25px;
+        font-family: gill sans;
+        display: flex;
+        justify-content: space-between;
+
+        .color {
+            color: #593901;
+        }
+    }
+
+    .giftCardRow {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+
+        .giftCards1 {
+            height: 150px;
+            width: 250px;
+            border-radius: 20px;
+            background-image: url("../images/giftCard1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .giftCards2 {
+            height: 150px;
+            width: 250px;
+            border-radius: 20px;
+            background-image: url("../images/giftCard2.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .giftCards3 {
+            height: 150px;
+            width: 250px;
+            border-radius: 20px;
+            background-image: url("../images/giftCard3.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 100px;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.findStoreContent {
+    max-width: 900px;
+    height: 1000px;
+    margin: 0 auto;
+
+    .findStoreBox {
+        margin-top: 60px;
+        font-size: 25px;
+        font-family: gill sans;
+        display: flex;
+        justify-content: space-between;
+        color: #8f8f8f;
+        font-weight: lighter;
+
+        .searchBtn {
+            height: 50px;
+            width: 90px;
+            background-color: #593901;
+            border-radius: 20px;
+            border: 1px solid #593901;
+            cursor: pointer;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-left: 15px;
+                margin-top: 15px;
+                letter-spacing: 2px;
+            }
+        }
+
+    }
+
+    hr {
+        width: 790px;
+        border: 1px solid #8f8f8f;
+    }
+
+    .findStoreMap {
+        height: 300px;
+        width: 900px;
+        background-image: url("../images/indianaMap.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+    
+    .storeLocations {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .directions {
+            color: #593901;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.siteNav {
+    height: 130px;
+    max-width: 1000px;
+    margin: 0 auto;
+    //width: 50px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: gill sans;
+
+    span {
+        height: 100px;
+        width: 100px;
+        background-image: url("../images/coffeeLogo.PNG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+

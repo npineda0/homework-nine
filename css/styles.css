@@ -1,3 +1,673 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.siteNav {
+  height: 130px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: gill sans;
+}
+.siteNav span {
+  height: 100px;
+  width: 100px;
+  background-image: url("../images/coffeeLogo.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menuNav {
+  background-color: #e6e6e6;
+  height: 70px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-family: gill sans;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+}
+
+.menuContent {
+  max-width: 1000px;
+  height: 1500px;
+  margin: 0 auto;
+}
+.menuContent .menuHeader {
+  margin-top: 40px;
+  margin-left: 67px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: gill sans;
+}
+.menuContent .drinksMenu {
+  margin-top: 40px;
+  margin-left: 67px;
+}
+.menuContent .drinksMenu .drinksHeader {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: gill sans;
+}
+.menuContent .drinksMenu hr {
+  width: 900px;
+  margin-left: -20px;
+  border: 1px solid #a8a8a8;
+}
+.menuContent .drinksRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .drinksRow .hotCoffee {
+  display: flex;
+  align-items: center;
+}
+.menuContent .drinksRow .hotCoffee .hotCoffeeImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/hotCoffee.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .hotCoffee .hotCoffeeTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .drinksRow .hotTea {
+  display: flex;
+  align-items: center;
+}
+.menuContent .drinksRow .hotTea .hotTeaImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/hotTeas.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .hotTea .hotTeaTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .drinksRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .drinksRow .hotDrinks {
+  display: flex;
+  align-items: center;
+}
+.menuContent .drinksRow .hotDrinks .hotDrinksImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/hotDrinks.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .hotDrinks .hotDrinksTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .drinksRow .Frappuccino {
+  display: flex;
+  align-items: center;
+  margin-right: -36px;
+}
+.menuContent .drinksRow .Frappuccino .FrappuccinoImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/Frappuccino.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .Frappuccino .FrappuccinoTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .drinksRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .drinksRow .coldCoffee {
+  display: flex;
+  align-items: center;
+}
+.menuContent .drinksRow .coldCoffee .coldCoffeeImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/coldCoffees.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .coldCoffee .coldCoffeeTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .drinksRow .icedTea {
+  display: flex;
+  align-items: center;
+  margin-right: -6px;
+}
+.menuContent .drinksRow .icedTea .icedTeaImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/icedTeas.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .icedTea .icedTeaTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .drinksRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .drinksRow .coldDrinks {
+  display: flex;
+  align-items: center;
+}
+.menuContent .drinksRow .coldDrinks .coldDrinksImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/coldDrinks.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .drinksRow .coldDrinks .coldDrinksTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .foodMenu {
+  margin-top: 40px;
+  margin-left: 67px;
+}
+.menuContent .foodMenu .foodHeader {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: gill sans;
+}
+.menuContent .foodMenu hr {
+  width: 900px;
+  margin-left: -20px;
+  border: 1px solid #a8a8a8;
+}
+.menuContent .foodRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .foodRow .hotBreakfast {
+  display: flex;
+  align-items: center;
+}
+.menuContent .foodRow .hotBreakfast .hotBreakfastImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/hotBreakfast.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .foodRow .hotBreakfast .hotBreakfastTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .foodRow .bakery {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.menuContent .foodRow .bakery .bakeryImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/bakery.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .foodRow .bakery .bakeryTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .foodRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .foodRow .lunch {
+  display: flex;
+  align-items: center;
+}
+.menuContent .foodRow .lunch .lunchImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/lunch.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .foodRow .lunch .lunchTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .foodRow .snacksSweets {
+  display: flex;
+  align-items: center;
+  margin-right: -6px;
+}
+.menuContent .foodRow .snacksSweets .snacksSweetsImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/snacksSweets.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .foodRow .snacksSweets .snacksSweetsTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .foodRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.menuContent .foodRow .oatmealYogurt {
+  display: flex;
+  align-items: center;
+}
+.menuContent .foodRow .oatmealYogurt .oatmealYogurtImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/oatmealYogurt.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .foodRow .oatmealYogurt .oatmealYogurtTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .atHomeCoffeeMenu {
+  margin-top: 40px;
+  margin-left: 67px;
+}
+.menuContent .atHomeCoffeeMenu .atHomeCoffeeHeader {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: gill sans;
+}
+.menuContent .atHomeCoffeeMenu hr {
+  width: 900px;
+  margin-left: -20px;
+  border: 1px solid #a8a8a8;
+}
+.menuContent .atHomeRow {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.menuContent .atHomeRow .wholeBean {
+  display: flex;
+  align-items: center;
+}
+.menuContent .atHomeRow .wholeBean .wholeBeanImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/wholeBean.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .atHomeRow .wholeBean .wholeBeanTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+.menuContent .atHomeRow .instant {
+  display: flex;
+  align-items: center;
+}
+.menuContent .atHomeRow .instant .instantImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 112px;
+  background-image: url("../images/instant.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menuContent .atHomeRow .instant .instantTxt {
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: gill sans;
+  letter-spacing: 1.8px;
+}
+
+.rewardsContent {
+  max-width: 900px;
+  height: 1400px;
+  margin: 0 auto;
+}
+.rewardsContent .rewardsHeader {
+  height: 55px;
+  background-color: #593901;
+  display: flex;
+  align-items: center;
+}
+.rewardsContent .rewardsHeader p {
+  color: #FFF;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: gill sans;
+}
+.rewardsContent .hero {
+  height: 500px;
+  width: 900px;
+  background-image: url("../images/coffeeHero.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.rewardsContent .hero .bigHeader {
+  color: #FFF;
+  font-family: gill sans;
+  font-size: 50px;
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+.rewardsContent .hero .smallHeader {
+  color: #FFF;
+  font-family: gill sans;
+  font-weight: lighter;
+  font-size: 22px;
+  position: absolute;
+  top: 250px;
+  left: 30px;
+}
+.rewardsContent .hero span {
+  color: #FFF;
+  background-color: #593901;
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  border-radius: 15px;
+}
+.rewardsContent .hero span p {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: gill sans;
+}
+.rewardsContent .startHeader {
+  margin-top: 120px;
+  margin-left: 238px;
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-family: gill sans;
+}
+.rewardsContent .startSubHeading {
+  margin-top: 15px;
+  margin-left: 253px;
+  font-size: 18px;
+  font-family: gill sans;
+  letter-spacing: 1px;
+}
+.rewardsContent .startStepsRow {
+  height: 500px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rewardsContent .startStepsRow .startSteps {
+  height: 400px;
+  width: 245px;
+  position: relative;
+}
+.rewardsContent .startStepsRow .stepsNum {
+  margin-top: 10px;
+  margin-left: 70px;
+  border: 4px solid #593901;
+  height: 100px;
+  width: 100px;
+  border-radius: 50% 50% 50%;
+  position: relative;
+}
+.rewardsContent .startStepsRow .stepsNum p {
+  margin-left: 110px;
+  position: absolute;
+  right: 39px;
+  top: 30px;
+  font-size: 30px;
+  font-family: gill sans;
+}
+.rewardsContent .startStepsRow .startStepsHeader {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: gill sans;
+}
+.rewardsContent .startStepsRow .startStepsTxt {
+  text-align: center;
+  position: absolute;
+  top: 230px;
+  font-size: 20px;
+}
+
+.giftCardsContent {
+  max-width: 900px;
+  height: 1300px;
+  margin: 0 auto;
+}
+.giftCardsContent .giftHeader {
+  margin-top: 60px;
+  font-size: 25px;
+  font-family: gill sans;
+  display: flex;
+  justify-content: space-between;
+}
+.giftCardsContent .giftHeader .color {
+  color: #593901;
+}
+.giftCardsContent .giftCardRow {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.giftCardsContent .giftCardRow .giftCards1 {
+  height: 150px;
+  width: 250px;
+  border-radius: 20px;
+  background-image: url("../images/giftCard1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.giftCardsContent .giftCardRow .giftCards2 {
+  height: 150px;
+  width: 250px;
+  border-radius: 20px;
+  background-image: url("../images/giftCard2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.giftCardsContent .giftCardRow .giftCards3 {
+  height: 150px;
+  width: 250px;
+  border-radius: 20px;
+  background-image: url("../images/giftCard3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.findStoreContent {
+  max-width: 900px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.findStoreContent .findStoreBox {
+  margin-top: 60px;
+  font-size: 25px;
+  font-family: gill sans;
+  display: flex;
+  justify-content: space-between;
+  color: #8f8f8f;
+  font-weight: lighter;
+}
+.findStoreContent .findStoreBox .searchBtn {
+  height: 50px;
+  width: 90px;
+  background-color: #593901;
+  border-radius: 20px;
+  border: 1px solid #593901;
+  cursor: pointer;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+.findStoreContent .findStoreBox .searchBtn p {
+  margin-left: 15px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+.findStoreContent hr {
+  width: 790px;
+  border: 1px solid #8f8f8f;
+}
+.findStoreContent .findStoreMap {
+  height: 300px;
+  width: 900px;
+  background-image: url("../images/indianaMap.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.findStoreContent .storeLocations {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.findStoreContent .storeLocations .directions {
+  color: #593901;
+}
+
+footer {
+  height: 100px;
+  background-color: #593901;
+  position: relative;
+  margin: 0 auto;
+}
+footer .footerTxt {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=styles.css.map */

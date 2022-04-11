@@ -1,0 +1,451 @@
+.menuContent {
+    max-width: 1000px;
+    height: 1500px;
+    margin: 0 auto; 
+
+    .menuHeader {
+        margin-top: 40px;
+        margin-left: 67px;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: gill sans;
+    }
+
+    .drinksMenu {
+        margin-top: 40px;
+        margin-left: 67px;
+
+        .drinksHeader {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: gill sans;
+        }
+    
+        hr {
+            width: 900px;
+            margin-left: -20px;
+            border: 1px solid #a8a8a8;
+        }
+    }
+
+    //hot coffee & hot teas 
+    .drinksRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .hotCoffee {
+            display: flex;
+            align-items: center;
+
+            .hotCoffeeImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/hotCoffee.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .hotCoffeeTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        .hotTea {
+            display: flex;
+            align-items: center;
+
+            .hotTeaImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/hotTeas.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .hotTeaTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    //hot drinks and frappuccinos
+    .drinksRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .hotDrinks {
+            display: flex;
+            align-items: center;
+
+            .hotDrinksImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/hotDrinks.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .hotDrinksTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        .Frappuccino {
+            display: flex;
+            align-items: center;
+            margin-right: -36px;
+
+            .FrappuccinoImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/Frappuccino.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .FrappuccinoTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    //cold coffees & iced teas 
+    .drinksRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .coldCoffee {
+            display: flex;
+            align-items: center;
+
+            .coldCoffeeImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/coldCoffees.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .coldCoffeeTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        .icedTea {
+            display: flex;
+            align-items: center;
+            margin-right: -6px;
+
+
+            .icedTeaImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/icedTeas.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .icedTeaTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    //cold drinks
+    .drinksRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .coldDrinks {
+            display: flex;
+            align-items: center;
+
+            .coldDrinksImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/coldDrinks.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .coldDrinksTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    .foodMenu {
+        margin-top: 40px;
+        margin-left: 67px;
+
+        .foodHeader {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: gill sans;
+        }
+    
+        hr {
+            width: 900px;
+            margin-left: -20px;
+            border: 1px solid #a8a8a8;
+        }
+    }
+
+    //hot breakfast and bakery
+    .foodRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .hotBreakfast {
+            display: flex;
+            align-items: center;
+
+            .hotBreakfastImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/hotBreakfast.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .hotBreakfastTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        .bakery {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+
+            .bakeryImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/bakery.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .bakeryTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    //lunch & snacks & sweets 
+    .foodRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .lunch {
+            display: flex;
+            align-items: center;
+
+            .lunchImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/lunch.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .lunchTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        .snacksSweets {
+            display: flex;
+            align-items: center;
+            margin-right: -6px;
+
+
+            .snacksSweetsImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/snacksSweets.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .snacksSweetsTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    //oatmeal & yogurt 
+    .foodRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        .oatmealYogurt {
+            display: flex;
+            align-items: center;
+
+            .oatmealYogurtImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/oatmealYogurt.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .oatmealYogurtTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+
+    .atHomeCoffeeMenu {
+        margin-top: 40px;
+        margin-left: 67px;
+
+        .atHomeCoffeeHeader {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: gill sans;
+        }
+    
+        hr {
+            width: 900px;
+            margin-left: -20px;
+            border: 1px solid #a8a8a8;
+        }
+    }
+
+    //whole beans & instant
+    .atHomeRow {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+
+
+        .wholeBean {
+            display: flex;
+            align-items: center;
+
+            .wholeBeanImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/wholeBean.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .wholeBeanTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        .instant {
+            display: flex;
+            align-items: center;
+
+            .instantImg {
+                height: 100px;
+                width: 100px;
+                border-radius: 112px;
+                background-image: url("../images/instant.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .instantTxt {
+                margin-left: 25px;
+                font-size: 20px;
+                font-family: gill sans;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+}
+
